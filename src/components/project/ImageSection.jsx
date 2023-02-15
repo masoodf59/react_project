@@ -3,19 +3,19 @@ import { CardImages } from './project.style';
 
 const Pictures = [
     {
-        Url: "https://pixabay.com/vectors/bike-bicycle-icon-sport-cycle-909834/",
+        Url: "images/img1.jpg",
         Name: "Stadsfietsen"
     },
     {
-        Url: "https://pixabay.com/vectors/bicycle-wheels-transport-cycle-38028/",
+        Url: "images/img1.jpg",
         Name: "Elektrische fietsen"
     },
     {
-        Url: "https://pixabay.com/illustrations/bicycle-basket-with-flowers-3758313/",
+        Url: "images/img2.jpg",
         Name: "Kinderfietsen"
     },
     {
-        Url: "https://pixabay.com/photos/cycles-cycle-bike-wheel-2293976/",
+        Url: "images/img2.jpg",
         Name: "Transport fietsen"
     }
 ]
@@ -30,20 +30,28 @@ const ImageSection = () => {
 
 
                     <div className="pics">
+                       
                         {
                             Pictures.map((item) => {
                                 return (
                                     <>
+                                    <div className="cardmain">
                                     <div className="card">
 
                                         <img src={item.Url} alt="" />
                                         <span>{item.Name}</span>
 
                                     </div>
+                                    </div>
                                     </>
                                 )
                             })
                         }
+
+                    
+                    </div>
+                    <div className="buttons">
+                    <button className='btn '>Bekijk gehele aanbod</button>
                     </div>
                 </div>
 
