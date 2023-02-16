@@ -3,8 +3,6 @@ import styled from 'styled-components';
 ///////////////////////////////AppWraper Styled component///////////////////////////////////
 export const AppWrapper = styled.div`
 background-color:rgb(237, 241, 242);
-height:540vh;
-
 box-sizing:border-box;
 margin:0;
 padding:0;
@@ -23,7 +21,7 @@ export const Logo = styled.image`
 display:flex;
 justify-content:space-evenly;
 align-items:center;
-img{
+.logopic{
     width:60px;
     height:60px;
     border-radius:50%;
@@ -44,6 +42,11 @@ button{
     font-weight:bold;
     background:yellow;
 }
+.navlink{
+text-decoration:none;
+color:black;
+}
+
 `;
 
 /////////////////////////////////////End Navbar Styled Component/////////////////////////////////////
@@ -351,7 +354,7 @@ p{
     color:grey;
     margin-top:1.5rem;
 }
-img{
+.image{
     width:5rem;
     height:5rem;
     border-radius:50%;
@@ -378,5 +381,135 @@ h6{
 
 `
 /////////////////////////////////////End Footer Section Styled Component/////////////////////////////////
+
+
+
+/////////////////////////////////////Anbod Section Styled Component/////////////////////////////////
+
+export const AnbodSection = styled.div`
+
+
+`
+/////////////////////////////////////End Anbod Section Styled Component/////////////////////////////////
+
+
+///////////////////////////////////// Anbod Sidebar Section Styled Component/////////////////////////////////
+export const SidebarSection =styled.div`
+background-color:white;
+width:290px;
+height:240vh;
+margin-top:2px;
+h3{
+    padding-top:2rem;
+   margin-left:4rem;
+   
+}
+h4{
+    margin-left:4rem;
+    margin-top:2rem;
+}
+.items{
+    margin-left:4rem;
+   
+}
+input,span{
+    margin:7px;
+    margin-top:13px;
+}
+
+
+
+`
+/////////////////////////////////////End Anbod Sidebar Section Styled Component/////////////////////////////////
+
+
+/////////////////////////////////////Right Side Section Styled Component/////////////////////////////////
+export const RightSideSection = styled.div`
+.card{
+    display:flex;
+    width:700px;
+    margin-top:20px;
+  
+}
+img{
+    width:12rem;
+    height:12rem;
+    padding:13px;
+    margin-top:14px;
+}
+.card_body{
+
+    padding:20px;
+    margin-left:25px;
+    
+}
+li{
+    list-style-type:none;
+}
+p{
+    color:grey;
+}
+span{
+    font-weight:bold;
+}
+h2{
+    margin-top:5rem;
+}
+
+
+`;
+
+/////////////////////////////////////End Right Side Section Styled Component/////////////////////////////////
+
+
+
+/////////////////////////////////////Detail Section Styled Component/////////////////////////////////
+export const ProductDetail = styled.div`
+
+margin-top:2px;
+img{
+    height:430px;
+    width:350px;
+   
+}
+.detailparent{
+    background:white;
+    padding:2rem;
+    
+    
+}
+.head{
+    position:absolute;
+   margin-left:7rem;
+   margin-top:20px;
+  
+}
+p{
+    color:grey;
+}
+h2{
+    padding-top:3rem;
+}
+span{
+    font-weight:bold;
+}
+li{
+    list-style-type:none;
+    color:grey;
+}
+h5{
+    margin-top:2rem;
+    font-weight:bold;
+}
+.target{
+    color:grey;
+    font-size:15px;
+}
+
+
+
+`
+
+/////////////////////////////////////End Detail Section Styled Component/////////////////////////////////
 
 

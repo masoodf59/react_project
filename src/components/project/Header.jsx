@@ -1,23 +1,26 @@
 import React from 'react';
-import About from './About';
-import CardSection from './CardSection';
-import Contact from './Contact';
-import Footer from './Footer';
-import HeroSection from './Hero_Section';
-import ImageSection from './ImageSection';
-import { Logo, NavWrapper, ReviewCard } from './project.style';
-import ReviewCards from './ReviewCards';
+
+import { Logo, NavWrapper } from './project.style';
+
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+    const navlink = ({ isActive }) => {
+        return {
+            border: isActive ? '1px solid black' : 'none',
+            
+           
+        }
+    }
     return (
         <>
             <NavWrapper>
-                <Logo><img src="images/logo.png" alt="" />
+                <Logo><img className='logopic' src="images/logo.png" alt="" />
                     <ul>
-                        <li>Home</li>
-                        <li>Anbod</li>
-                        <li>Reparatie</li>
-                        <li>Inruilen</li>
+                        <NavLink className="navlink" to="/" style={navlink}><li>Home</li></NavLink>
+                        <NavLink className="navlink" to="/anbod" style={navlink}><li>Anbod</li></NavLink>
+                        <NavLink className="navlink" ><li>Reparatie</li></NavLink>
+                        <NavLink className="navlink" ><li>Inruilen</li></NavLink>
                         <li>
                             <button className='btn'>Name contact ap</button>
                         </li>
@@ -25,16 +28,7 @@ const Header = () => {
                 </Logo>
             </NavWrapper>
 
-            <HeroSection />
 
-            <ImageSection />
-            <CardSection />
-            <ReviewCards />
-            <About />
-            <Contact/>
-
-
-            <Footer/>
 
 
         </>

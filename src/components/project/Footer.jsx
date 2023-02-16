@@ -7,7 +7,7 @@ const Footer = () => {
           <FooterSection>
             <div className="row  parent">
                 <div className="col-md-5">
-                    <img src="images/logo.png" alt="" /><br/>
+                    <img className='image' src="images/logo.png" alt="" /><br/>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure doloribus, nesciunt quisquam provident amet
                          blanditiis eum animi natus quia.
                          Magni velit eius error architecto, rerum possimus iusto cupiditate minus harum.</p>
